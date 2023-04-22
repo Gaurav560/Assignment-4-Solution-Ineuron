@@ -1,0 +1,36 @@
+package in.ineuron.main;
+
+public class Q8 {
+
+	public static void main(String[] args) {
+
+		// to check if a string contains all unique characters
+occurence();
+	}
+
+	public static char occurence() {
+		String string = "aaaaaaabcccacdeeeeeeeeae";
+		char c='@';
+		int z=0;
+		string = string.toLowerCase();
+		int count = 0;
+		for (int i = 0; i < string.length(); i++) {
+			count = 0;
+			for (int j = i + 1; j < string.length(); j++)
+			{
+				if (string.charAt(i) == string.charAt(j))
+				{
+					count++;
+				}
+			}
+			if (count+1>z) {
+				z=count+1;
+				c=string.charAt(i);
+			}
+			 
+		}
+		System.out.println(c);
+return c;
+	}
+
+}

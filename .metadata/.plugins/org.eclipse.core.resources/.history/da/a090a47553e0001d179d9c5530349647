@@ -1,0 +1,30 @@
+package in.ineuron.main;
+import java.util.*;
+
+public class Q1 {
+
+	public static void main(String[] args) {
+		// a program to remove duplicate characters from a string
+
+		// a string
+		String name = "AbraCaDabra";
+		String name1 = name.toLowerCase();
+
+		// changing to character array
+		char[] array = name1.toCharArray();
+		ArrayList l1 = (ArrayList) Arrays.asList(array);
+
+		// traversing the array with for loop
+		for (int i = 0; i < l1.size(); i++) {
+			for (int j = i + 1; j < l1.size(); j++) {
+				if (array[i] == array[j]) {
+					l1.remove(i);
+				}
+			}
+
+		}
+		
+		System.out.println(l1);
+	}
+
+}

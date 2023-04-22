@@ -1,0 +1,21 @@
+package in.ineuron.main;
+
+public class Q6 {
+
+	public static void main(String[] args) {
+		// program to check whether a strings are PANGRAM or Not
+//pangram-if it contains all the alphabets in the string 
+		// count variable to count no of characters present in  array
+		int count = 0;
+		
+		String string="The quick brown fox jumps over the lazy dog";
+		String string2=string.replaceAll("\\s","");
+		String str1=string.toLowerCase();
+		char[] arr=str1.toCharArray();
+		
+	
+
+
+	}
+
+}

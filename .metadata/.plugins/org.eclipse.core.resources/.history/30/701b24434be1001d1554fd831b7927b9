@@ -1,0 +1,31 @@
+package in.ineuron.main;
+
+public class Q7 {
+
+	public static void main(String[] args) {
+	
+		//to check if a string contains all unique characters
+		
+		boolean k=checkUniqueness("abcde");
+		
+		
+	}
+public static boolean checkUniqueness(String str) {
+	
+	boolean f=true;
+	
+	String string2=str.toLowerCase();
+	
+	for (int i = 0; i < string2.length(); i++) {
+		for (int j = i; j < string2.length(); j++) {
+			if (string2.charAt(i)==string2.charAt(j)) {
+				f=false;
+			}
+		}
+	}
+	
+	return f;
+	
+	
+}  
+}

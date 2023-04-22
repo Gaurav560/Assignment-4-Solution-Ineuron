@@ -1,0 +1,20 @@
+package in.ineuron.main;
+
+public class Q4 {
+
+	public static void main(String[] args) 
+	{
+		//count number of constants,vowels and special characters in a string
+		
+		String str="AnamikaIsBeautiful@123";
+		String str1=str.toLowerCase();
+		System.out.println(str1);
+		char[] array=str1.toCharArray();
+		for (int i = 0; i < array.length; i++)
+		{
+			
+			
+		}
+
+	}
+}

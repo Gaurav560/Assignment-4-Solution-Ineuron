@@ -1,0 +1,29 @@
+package in.ineuron.main;
+
+
+
+public class Q1 {
+
+	public static void main(String[] args) {
+		//a program to remove duplicate characters from a string 
+		
+		//a string 
+		String name="AbraCaDabra";
+		
+		//changing to character array 
+		char[] array=name.toCharArray();
+		
+		//traversing the array with for  loop 
+		for(int i=0;i<array.length;i++)
+		{
+			for (int j = i+1; j < array.length; j++)
+			{
+				if (array[i]==array[j]) {
+					System.out.println("yes");
+				}
+			}
+			
+		}
+	}
+
+}

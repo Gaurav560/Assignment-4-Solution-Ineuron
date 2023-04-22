@@ -1,0 +1,28 @@
+package in.ineuron.main;
+
+import java.util.*;
+
+public class Q3 {
+
+	public static void main(String[] args) {
+		// check whether 2552 is PALINDROME or not 
+		int k=0;
+		// a string
+		String palindromeCheck = "6724";
+		char[] arr=palindromeCheck.toCharArray();
+
+		for (int i = 0; i < arr.length/2; i++) {
+			
+			if (arr[i]==arr[arr.length-1-i]) {
+			k++;
+			}else {
+				System.out.println("not a palindrome number.");
+				break;
+			}
+			
+		}if (k==arr.length/2) {
+			System.out.println("palindrome number");
+		}
+	}
+
+}
